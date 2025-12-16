@@ -223,6 +223,13 @@ The training pipeline includes:
 - Lowercasing
 - Whitespace normalization
 
+**OCR Text Preprocessing:**
+For text extracted from newspaper images, additional preprocessing is applied:
+- Removes newspaper metadata (dates, weather info, prices, website URLs)
+- Filters out section labels and newspaper names
+- Extracts meaningful content (headlines, article snippets)
+- Focuses on actual news content for better prediction accuracy
+
 ### Dataset
 
 The model is trained on a dataset containing:
@@ -251,6 +258,8 @@ The data is shuffled and split into:
 - **pandas**: Data manipulation and analysis
 - **joblib**: Model serialization
 - **numpy**: Numerical computations
+- **PaddleOCR**: OCR engine for text extraction from images
+- **Pillow**: Image processing
 
 ## 📦 Dependencies
 
@@ -258,10 +267,14 @@ All dependencies are listed in `requirements.txt`:
 
 ```
 flask>=2.3.0
+flask-cors>=4.0.0
 scikit-learn>=1.3.0
 pandas>=2.0.0
 joblib>=1.3.0
 numpy>=1.24.0
+Pillow>=10.0.0
+paddleocr[doc-parser]
+paddlepaddle
 ```
 
 ## 🔧 Development
