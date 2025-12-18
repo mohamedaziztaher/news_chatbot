@@ -430,11 +430,11 @@ NlpProject/
 ### Dark Theme
 ![Dark Theme](screenshots/Screenshot%20From%202025-12-18%2009-27-41.png)
 
+### New Chat
+![New Chat](screenshots/Screenshot%20From%202025-12-18%2009-28-01.png)
+
 ### Image Analysis
 ![Image Analysis](screenshots/Screenshot%20From%202025-12-18%2009-27-48.png)
-
-### Chat History
-![Chat History](screenshots/Screenshot%20From%202025-12-18%2009-28-01.png)
 
 ### Results Display
 ![Results](screenshots/Screenshot%20From%202025-12-18%2009-30-45.png)
